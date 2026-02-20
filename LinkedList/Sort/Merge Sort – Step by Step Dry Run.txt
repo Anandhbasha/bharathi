@@ -1,0 +1,20 @@
+Step 1: Find Middle
+
+Using slow & fast pointer:
+slow = 4
+fast = 2
+
+Iteration 1:
+slow = 2
+fast = 3 (jump 2 steps)
+
+Stop (fast.next = null)
+
+Middle = 2
+
+Split into:
+
+Left: 4 → 2
+Right: 1 → 3
+
+
