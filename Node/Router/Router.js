@@ -1,9 +1,11 @@
 import express from "express"
-import { insert, read } from "../Controller/Controller.js"
+import { deleteData, insert, read, update } from "../Controller/Controller.js"
 
 const route = express.Router()
 
 route.get("/",read)
 route.post("/",insert)
+route.put("/:id",update)
+route.delete("/:id",deleteData)
 
 export default route
